@@ -69,12 +69,12 @@ public class PlayerInput : MonoBehaviour
                 //Debug.Log("SignedDirection Was " + signedDirection);
                 if (signedDirection>0)
                 {
-                    CurrentObject.Move(true);
+                    //CurrentObject.Move(true); -------------------ENABLE THIS FOR MOVEMENT WÝTH DÝRECTÝON
                     //Debug.Log("WasDraggedTowardsFrontOfCar");
                 }
                 else
                 {
-                    CurrentObject.Move(false);
+                    //CurrentObject.Move(false); -------------------ENABLE THIS FOR MOVEMENT WÝTH DÝRECTÝON
                     //Debug.Log("WasDraggedTowardsBackOfCar");
 
                 }

@@ -14,6 +14,7 @@ public class MoveableObject : MonoBehaviour, IObjectWithState
     private RaycastHit hit;
 
     public Animator animator;
+    [SerializeField] private bool forward; // if going forward set this true. if going backwards set it false. tickmark means true. empty mark is false
     [SerializeField] private ParticleSystem happyParticle;
     [SerializeField] private ParticleSystem madParticle;
 
@@ -29,10 +30,10 @@ public class MoveableObject : MonoBehaviour, IObjectWithState
     }
 
     // ------------------- PUBLIC FUNCTIONS ------------------- \\ 
-    public void Move(bool fwdTrue)
+    public void Move()
     {
         objectState = CurrentState.Moving;
-        if (fwdTrue ) { fwdMultiplier = 1; }
+        if (forward ) { fwdMultiplier = 1; }
         else { fwdMultiplier = -1; }
         LogicCheck();// to make sure its not right up against an object so it moves again.
         //Debug.Log(this.name + "is moving" + fwdMultiplier);

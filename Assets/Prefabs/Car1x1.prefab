@@ -5574,6 +5574,7 @@ MonoBehaviour:
   Speed: 2
   checkDist: 0.1
   animator: {fileID: 2451645050694404661}
+  forward: 1
   happyParticle: {fileID: 199075982096290393}
   madParticle: {fileID: 7755899501803392508}
 --- !u!95 &2451645050694404661
